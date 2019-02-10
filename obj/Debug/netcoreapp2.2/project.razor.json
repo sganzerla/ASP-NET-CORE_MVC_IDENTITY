@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\alisson-pc\\Documents\\Cursos Udemy\\aspnet-core-aprendendo-do-zero-ao-avancado\\modulo5\\modulo5.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}
