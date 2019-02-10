@@ -1,5 +1,13 @@
 ﻿# Introducao-ASP_NET_CORE-Identity
 
+//Necessário ter instalado:
+
+A)  .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
+
+B)  MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
+
+C)  Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
+
 //cria projeto mvc Entity com Identity Individual com login de email e senha em base local
 
 dotnet new mvc --auth Individual --use-local-db --
