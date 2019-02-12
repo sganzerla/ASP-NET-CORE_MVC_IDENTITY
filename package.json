@@ -1,0 +1,12 @@
+{
+  "name": "modulo5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sganzerla/Introdu-o-ao-ASP_NET_CORE-Identity.git",
+  "author": "Alisson Michel Sganzerla <alisson_sganzerla@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "jquery": "^3.3.1"
+  }
+}
