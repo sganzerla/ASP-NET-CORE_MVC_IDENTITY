@@ -45,22 +45,33 @@ dotnet aspnet-codegenerator identity -dc modulo5.Data.ApplicationDbContext --fil
 //instalar yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable
 //necessário ter antes node.js https://nodejs.org/en/ instalado
 
-//add gerenciador de pacotes yarn no projeto	
+//add gerenciador de pacotes yarn no projeto
+
 npm install -g yarn
 
+
 //yarn init e cria arquivo package.json
+
 yarn init
 
+
 //instalando jquery no projeto pelo yarn
+
 yarn add jquery
 
+
 //atualizando bibliotecas pelo yarn
+
 yarn upgrade jquery
 
+
 //removendo bibliotecas
+
 yarn remove jquery
 
+
 //instalando dependências 
+
 yarn install
 
 
