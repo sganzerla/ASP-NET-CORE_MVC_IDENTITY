@@ -15,7 +15,7 @@ dotnet new mvc --auth Individual --use-local-db --
 
 //cria banco
 
-dotnet databse update
+dotnet database update
 
 
 //instala ferramenta p gerar os codigos ocultos
