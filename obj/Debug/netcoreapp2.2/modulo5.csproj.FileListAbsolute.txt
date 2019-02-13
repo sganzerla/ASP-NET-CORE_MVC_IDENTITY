@@ -14,6 +14,7 @@ C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-ava
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.TagHelpers.input.cache
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.TagHelpers.output.cache
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.RazorCoreGenerate.cache
+C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
@@ -34,4 +35,3 @@ C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-ava
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.dll
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.pdb
 C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\modulo5.csproj.CopyComplete
-C:\Users\alisson-pc\Documents\Cursos Udemy\aspnet-core-aprendendo-do-zero-ao-avancado\modulo5\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
