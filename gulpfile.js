@@ -2,13 +2,29 @@ var gulp = require('gulp');
 var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
 var uncss = require('gulp-uncss');
+var sync = require('browser-sync').create();
+
+gulp.task('browser-sync',function(){
+
+    sync.init({
+            proxy:'localhost:5000'
+        });
+    //monitora alterações no código dentro do diretório css e então invoca função
+    gulp.watch('./styles/*.css',['css']);
+    //monitora alterações no código dentro do diretório js e então invoca funcão
+    gulp.watch('./js/*.js',['js']);
+});
+
+
 //tarefa chamada js
 //substitui o jquery e bootstrap da web pelo local minificado
 gulp.task('js', function () {
     return gulp.src([
         './node_modules/bootstrap/dist/js/bootstrap.min.js',
         './node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('wwwroot/js/'));
+        .pipe(gulp.dest('wwwroot/js/'))
+        //atualizar navegador atraver do browserSync quando ocorrer atualização código
+        .pipe(sync.stream());
 });
 //tarefa chamada css
 //concatena dois arquivos css em apenas um
@@ -25,10 +41,7 @@ gulp.task('css', function () {
         //verifica todas as views e remove o css do arquivo geraado que não for utilizado
         .pipe(uncss({ html: ['Views/**/*.cshtml'] }))
         //destino do arquivo
-        .pipe(gulp.dest('wwwroot/css'));
-});
-//tarefa que fica assistindo quando ocorre alteração no diretório css 
-//chama o evento css que atualiza os estilos da página
-gulp.task('watch-css', function () {
-    gulp.watch('./Styles/**/*.css', ['css']);
+        .pipe(gulp.dest('wwwroot/css'))
+        //atualizar navegador atraver do browserSync quando ocorrer atualização código
+        .pipe(sync.stream());
 });
