@@ -15,7 +15,7 @@ dotnet new mvc --auth Individual --use-local-db --
 
 //cria banco
 
-dotnet databse update
+dotnet database update
 
 
 //instala ferramenta p gerar os codigos ocultos
@@ -41,4 +41,51 @@ dotnet aspnet-codegenerator identity -dc modulo5.Data.ApplicationDbContext --fil
 //exibe o código fonte da pagemodel login permitindo sua customização
 
 dotnet aspnet-codegenerator identity -dc modulo5.Data.ApplicationDbContext --files Account.Login
+
+//instalar yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable
+//necessário ter antes node.js https://nodejs.org/en/ instalado
+
+//add gerenciador de pacotes yarn no projeto
+
+npm install -g yarn
+
+
+//yarn init e cria arquivo package.json
+
+yarn init
+
+
+//instalando jquery no projeto pelo yarn
+
+yarn add jquery
+
+
+//atualizando bibliotecas pelo yarn
+
+yarn upgrade jquery
+
+
+//removendo bibliotecas
+
+yarn remove jquery
+
+
+//instalando dependências 
+
+yarn install
+
+//instalando automatizador de tarefas Gulp
+
+yarn add gulp
+
+// executando tarefas com gulp
+
+yarn gulp nometarefa
+
+//adicionando pacotes do gulp
+
+yarn add gulp-concat | yarn add gulp-cssmin
+
+
+
 
