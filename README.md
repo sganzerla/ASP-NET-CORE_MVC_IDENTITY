@@ -74,4 +74,18 @@ yarn remove jquery
 
 yarn install
 
+//instalando automatizador de tarefas Gulp
+
+yarn add gulp
+
+// executando tarefas com gulp
+
+yarn gulp nometarefa
+
+//adicionando pacotes do gulp
+
+yarn add gulp-concat | yarn add gulp-cssmin
+
+
+
 
