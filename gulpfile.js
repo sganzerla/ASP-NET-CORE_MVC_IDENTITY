@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var cssmin = require('gulp-cssmin');
 var concat = require('gulp-concat');
-
+var uncss = require('gulp-uncss');
 //tarefa chamada js
 //substitui o jquery e bootstrap da web pelo local minificado
 gulp.task('js', function () {
@@ -18,10 +18,17 @@ gulp.task('css', function () {
         './styles/site.css',
         './node_modules/bootstrap/dist/css/bootstrap.css'
     ])
-    //concatena os arquivos selecionados dentro do novo arquivo
-    .pipe(concat('site.min.css'))
-    //minimifica o arquivo
-    .pipe(cssmin())    
-    //destino do arquivo
-    .pipe(gulp.dest('wwwroot/css'));
+        //concatena os arquivos selecionados dentro do novo arquivo
+        .pipe(concat('site.min.css'))
+        //minimifica o arquivo
+        .pipe(cssmin())
+        //verifica todas as views e remove o css do arquivo geraado que não for utilizado
+        .pipe(uncss({ html: ['Views/**/*.cshtml'] }))
+        //destino do arquivo
+        .pipe(gulp.dest('wwwroot/css'));
+});
+//tarefa que fica assistindo quando ocorre alteração no diretório css 
+//chama o evento css que atualiza os estilos da página
+gulp.task('watch-css', function () {
+    gulp.watch('./Styles/**/*.css', ['css']);
 });
