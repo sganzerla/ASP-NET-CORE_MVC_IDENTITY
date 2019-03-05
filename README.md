@@ -1,4 +1,4 @@
-﻿# Introducao-ASP_NET_CORE-Identity
+ <h3>Originalmente de ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0) de <br>  Stephany Henrique de Almeida Batista </h3>
 <br>
 //Necessário ter instalado:
 <ul>
