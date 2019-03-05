@@ -1,76 +1,66 @@
 ﻿# Introducao-ASP_NET_CORE-Identity
-
+<br>
 //Necessário ter instalado:
-
-A)  .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
-
-B)  MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
-
-C)  Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
-
-//cria projeto mvc Entity com Identity Individual com login de email e senha em base local
-
+<ul>
+ <li>
+ .Net Core SDK 2.2 https://dotnet.microsoft.com/download/dotnet-core/2.2
+</li>
+ <li>
+  MS SQL Server https://www.microsoft.com/pt-br/sql-server/sql-server-downloads
+</li>
+ <li>
+ Visual Studio Code https://code.visualstudio.com/ ou  Visual Studio https://visualstudio.microsoft.com/pt-br/
+</li>
+</ul>
+<p>
+//cria projeto mvc Entity com Identity Individual com login de email e senha em base local <br>
 "dotnet new mvc --auth Individual --use-local-db--"
-
+</p><p>
 //cria banco
-
 "dotnet database update"
-
-//instala ferramenta p gerar os codigos ocultos
-
+</p><p>
+//instala ferramenta p gerar os codigos ocultos<br>
 "dotnet tool install -g dotnet-aspnet-codegenerator"
-
-//add pacote da ferramenta p gerar codidos ocultos
-
+</p><p>
+//add pacote da ferramenta p gerar codidos ocultos<br>
 "dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design"
-
-//exibe o código fonte da pagemodel register
-
+</p><p>
+//exibe o código fonte da pagemodel register<br>
 "dotnet aspnet-codegenerator identity -dc modulo5.Data.ApplicationDbContext --files Account.Register"
-
-//lista os arquivos do identity 
-
+</p><p>
+//lista os arquivos do identity <br>
  "dotnet aspnet-codegenerator identity --listFiles --force"
- 
-//exibe o código fonte da pagemodel login permitindo sua customização
-
+ </p><p>
+//exibe o código fonte da pagemodel login permitindo sua customização<br>
 "dotnet aspnet-codegenerator identity -dc modulo5.Data.ApplicationDbContext --files Account.Login"
-
-//instalar yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable
+</p><p>
+//instalar yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable<br>
 //necessário ter antes node.js https://nodejs.org/en/ instalado
-
-//add gerenciador de pacotes yarn no projeto
-
+</p><p>
+//add gerenciador de pacotes yarn no projeto<br>
 "npm install -g yarn"
-
-//yarn init e cria arquivo package.json
-
+</p><p>
+//yarn init e cria arquivo package.json<br>
 "yarn init"
-
-//instalando jquery no projeto pelo yarn
-
+</p><p>
+//instalando jquery no projeto pelo yarn<br>
 "yarn add jquery"
-
-//atualizando bibliotecas pelo yarn
-
+</p><p>
+//atualizando bibliotecas pelo yarn<br>
 "yarn upgrade jquery"
-
-//removendo bibliotecas
-
+</p><p>
+//removendo bibliotecas<br>
 "yarn remove jquery"
-
-//instalando dependências 
-
+</p><p>
+//instalando dependências <br>
 "yarn install"
-
-//instalando automatizador de tarefas Gulp
-
+</p><p>
+//instalando automatizador de tarefas Gulp <br>
 "yarn add gulp"
-
-//adicionando pacotes do gulp
-
+</p><p>
+//adicionando pacotes do gulp<br>
 "yarn add gulp-concat" | "yarn add gulp-cssmin" | "yarn add gulp-uncss" | "yarn gulp browser-sync"
-
-// executando tarefas com gulp
-
+</p><p>
+// executando tarefas com gulp <br>
 "yarn gulp nometarefa"
+</p>
